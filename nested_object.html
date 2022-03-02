@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Object</title>
+</head>
+<body>
+
+</body>
+<script>
+    let person = {
+        name: "Fauzan Rizkyana. G", 
+        age: 19, 
+        sex: "Laki-laki", 
+        religion: "Islam", 
+        birth: {
+            birthplace: "Bandung",
+            birthdate: "4 Maret 2002"
+        }, 
+        address: {
+            line: "Kp. Muara Ciwidey RT 02/04 No. 1 Desa Cilampeni Kec. Katapang", 
+            city: "Kabupaten Bandung", 
+            province: "Jawa Barat", 
+            region: "Indonesia"
+        }, 
+        education: {
+            college: "Sekolah Tinggi Teknologi Bandung",
+            major: "Teknik Informatika",
+            class: "TIF RP-21B"
+        }
+    }
+    for (let data in person) {
+        console.log(person[data]);
+    }
+    for (let lahir in person.birth) {
+        console.log(person.birth[lahir]);
+    }
+    for (let alamat in person.address) {
+        console.log(person.address[alamat]);
+    }
+    for (let pendidikan in person.education) {
+        console.log(person.education[pendidikan]);
+    }
+</script>
+</html>
